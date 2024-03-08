@@ -1,0 +1,13 @@
+{
+    "Button": {
+      "url": "https://raw.githubusercontent.com/Sahilwagh03/Ace_Aptitude-App/master/Components/Button.jsx",
+      "version": "1.2.0",
+      "description": "A basic button component for user interactions."
+    },
+    "Modal": {
+      "url": "https://your-repo/Modal.js",
+      "version": "1.0.1",
+      "description": "A versatile modal component for displaying popups."
+    }
+  }
+  
