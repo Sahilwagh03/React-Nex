@@ -2,7 +2,8 @@ const fs = require('fs');
 const axios = require('axios');
 
 async function registerComponent(name) {
-  const componentPath = `src/components-react-nex/${name}.jsx`;
+  const componentPath = `src/components-react-nex/${name}/${name}.jsx`;
+  const utilsPath = `src/components-react-nex/${name}/alertUtils.js`
 
   // Fetch component code from URL if not found locally
   if (!fs.existsSync(componentPath)) {
@@ -22,12 +23,22 @@ async function registerComponent(name) {
       const code = response.data;
 
       // Create components folder if it doesn't exist
-      if (!fs.existsSync('src/components-react-nex')) {
-        fs.mkdirSync('src/components-react-nex', { recursive: true });
+      if (!fs.existsSync(`src/components-react-nex/${name}/`)) {
+        fs.mkdirSync(`src/components-react-nex/${name}/`, { recursive: true });
       }
 
       // Store code locally
       fs.writeFileSync(componentPath, code);
+
+      if(componentInfo.utilsFiles){
+        const response = await axios.get(componentInfo.utilsFiles, { responseType: 'text' });
+        if (!response.data) {
+          throw new Error(`Failed to fetch component ${name}: No data received`);
+        }
+        const utilsData = response.data;  
+        // Store code locally
+        fs.writeFileSync(utilsPath, utilsData);
+      }
 
     } catch (error) {
       console.error(`Error fetching component ${name}: ${error.message}`);
@@ -44,4 +55,6 @@ async function registerComponent(name) {
   }
 }
 
-module.exports = { registerComponent };
+module.exports = { 
+  registerComponent 
+};

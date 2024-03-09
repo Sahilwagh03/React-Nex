@@ -3,7 +3,7 @@
   "bin": {
     "react-nex": "./src/cli.js"
   },
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "ReactNex is a next-generation UI component library for React developers. It offers a wide range of customizable and performant components to help you build beautiful and responsive user interfaces quickly and efficiently.",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,8 @@
   "homepage": "https://github.com/Sahilwagh03/React-Nex#readme",
   "peerDependencies": {
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "classnames": "2.5.1"
   },
   "dependencies": {
     "axios": "^1.6.7",
