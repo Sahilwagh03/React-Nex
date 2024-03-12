@@ -1,14 +1,36 @@
 {
-    "Alert": {
-      "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Alert/Alert.jsx",
-      "version": "1.2.0",
-      "description": "A basic button component for user interactions.",
-      "utilsFiles":"https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Alert/utils.js"
-    },
-    "Button": {
-      "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Button/Button.jsx",
-      "version": "1.0.1",
-      "description": "A versatile Button component for displaying popups."
-    }
+  "Alert": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Alert/Alert.jsx",
+    "version": "1.2.0",
+    "description": "A basic button component for user interactions.",
+    "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Alert/utils.js"
+  },
+  "Button": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Button/Button.jsx",
+    "version": "1.0.1",
+    "description": "A versatile Button component for displaying popups."
+  },
+  "Avatar": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Avatar/Avatar.jsx",
+    "version": "1.0.0",
+    "description": "A versatile Avatar component for displaying user avatars.",
+    "dependencies": ["AvatarImage","AvatarFallback"],
+    "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Avatar/utils.js"
+  },
+  "AvatarImage": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Avatar/AvatarImage.jsx",
+    "version": "1.0.0",
+    "description": "Component to display avatar images."
+  },
+  "AvatarFallback": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Avatar/AvatarInitialsFallback.jsx",
+    "version": "1.0.0",
+    "description": "Fallback component to display when avatar image is not available."
+  },
+  "AvatarGroup": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/AvatarGroup/AvatarGroup.jsx",
+    "version": "1.0.0",
+    "description": "Component to display a group of avatars.",
+    "dependencies": ["Avatar"]
   }
-  
+}
