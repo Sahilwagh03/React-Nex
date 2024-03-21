@@ -3,7 +3,7 @@
   "bin": {
     "react-nex": "./src/cli.js"
   },
-  "version": "1.0.9",
+  "version": "1.1.5",
   "description": "ReactNex is a next-generation UI component library for React developers. It offers a wide range of customizable and performant components to help you build beautiful and responsive user interfaces quickly and efficiently.",
   "main": "index.js",
   "scripts": {

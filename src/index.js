@@ -1,9 +1,11 @@
 const fs = require('fs');
 const axios = require('axios');
 
-async function registerComponent(name) {
-  const componentPath = `src/components-react-nex/${name}/${name}.jsx`;
-  const utilsPath = `src/components-react-nex/${name}/utils.js`;
+async function registerComponent(name,folderName) {
+
+  const folderNames = folderName || name
+  const componentPath = `src/components-react-nex/${folderNames}/${name}.jsx`;
+  const utilsPath = `src/components-react-nex/${folderNames}/utils.js`;
 
   // Fetch component code from URL if not found locally
   if (!fs.existsSync(componentPath)) {
@@ -22,9 +24,10 @@ async function registerComponent(name) {
 
       const code = response.data;
 
+      
       // Create components folder if it doesn't exist
-      if (!fs.existsSync(`src/components-react-nex/${name}/`)) {
-        fs.mkdirSync(`src/components-react-nex/${name}/`, { recursive: true });
+      if (!fs.existsSync(`src/components-react-nex/${folderNames}/`)) {
+        fs.mkdirSync(`src/components-react-nex/${folderNames}/`, { recursive: true });
       }
 
       // Store code locally
@@ -38,7 +41,7 @@ async function registerComponent(name) {
             throw new Error(`Dependency "${dependencyName}" not found in registry`);
           }
 
-          const dependencyPath = `src/components-react-nex/${name}/${dependencyName}.jsx`;
+          const dependencyPath = `src/components-react-nex/${folderNames}/${dependencyName}.jsx`;
           const dependencyResponse = await axios.get(dependencyInfo.url, { responseType: 'text' });
           if (!dependencyResponse.data) {
             throw new Error(`Failed to fetch dependency ${dependencyName}: No data received`);

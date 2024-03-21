@@ -14,7 +14,10 @@
     "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Avatar/Avatar.jsx",
     "version": "1.0.0",
     "description": "A versatile Avatar component for displaying user avatars.",
-    "dependencies": ["AvatarImage","AvatarFallback"],
+    "dependencies": [
+      "AvatarImage",
+      "AvatarFallback"
+    ],
     "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Avatar/utils.js"
   },
   "AvatarImage": {
@@ -30,7 +33,74 @@
   "AvatarGroup": {
     "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/AvatarGroup/AvatarGroup.jsx",
     "version": "1.0.0",
-    "description": "Component to display a group of avatars.",
-    "dependencies": ["Avatar"]
+    "description": "Component to display a group of avatars."
+  },
+  "Badge": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Badge/Badge.jsx",
+    "version": "1.0.0",
+    "description": "A simple badge component for labeling content."
+  },
+  "Checkbox": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/CheckBox/CheckBox.jsx",
+    "version": "1.0.0",
+    "description": "A checkbox component for selecting options."
+  },
+  "InputOtpBox": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Input%20OTP/InputOtpBox.jsx",
+    "version": "1.0.1",
+    "description": "A PinBox component for getting otp values",
+    "dependencies": [
+      "InputOtpContainer"
+    ],
+    "folderName":"Input OTP",
+    "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Input%20OTP/utils.js"
+  },
+  "InputOtpContainer": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Input%20OTP/InputOtpContainer.jsx",
+    "version": "1.0.1",
+    "description": "A PinContainer component for wraping the PinBox"
+  },
+  "Card": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Card/Card.jsx",
+    "version": "1.0.0",
+    "description": "A versatile Card component for displaying content in a structured manner.",
+    "dependencies": [
+      "CardHeader",
+      "CardTitle",
+      "CardComponets",
+      "CardDescription",
+      "CardBody",
+      "CardFooter"
+    ]
+  },
+  "CardHeader": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Card/CardHeader.jsx",
+    "version": "1.0.0",
+    "description": "Component representing the header of the card."
+  },
+  "CardTitle": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Card/CardTitle.jsx",
+    "version": "1.0.0",
+    "description": "Component representing the title of the card."
+  },
+  "CardComponets": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Card/CardComponets.jsx",
+    "version": "1.0.0",
+    "description": "export all components form this file "
+  },
+  "CardDescription": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Card/CardDescription.jsx",
+    "version": "1.0.0",
+    "description": "Component representing the description of the card."
+  },
+  "CardBody": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Card/CardBody.jsx",
+    "version": "1.0.0",
+    "description": "Component representing the body of the card."
+  },
+  "CardFooter": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Card/CardFooter.jsx",
+    "version": "1.0.0",
+    "description": "Component representing the footer of the card."
   }
 }
