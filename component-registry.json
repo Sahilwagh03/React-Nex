@@ -102,5 +102,29 @@
     "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Card/CardFooter.jsx",
     "version": "1.0.0",
     "description": "Component representing the footer of the card."
+  },
+  "Pagination":{
+    "url":"https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Pagination/Pagination.jsx",
+    "version": "1.0.0",
+    "description": "A Pagination Component for Pagination with beutiful Ui",
+    "dependencies": [
+      "PaginationItem"
+    ]
+  },
+  "PaginationItem": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Pagination/PaginationItem.jsx",
+    "version": "1.0.0",
+    "description": "A PaginationItem Component for Pagination with beutiful Ui"
+  },
+  "Skeleton": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Skeleton/Skeleton.jsx",
+    "version": "1.0.0",
+    "description": "A Skeleton Component for Loading"
+  },
+  "SearchBar": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/SearchBar/SearchBar.jsx",
+    "version": "1.0.0",
+    "description": "A SearchBar Component for Loading",
+    "utilsFiles":"https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/SearchBar/utils.js"
   }
 }
