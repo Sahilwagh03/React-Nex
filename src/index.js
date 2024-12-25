@@ -1,11 +1,13 @@
 const fs = require('fs');
 const axios = require('axios');
 
-async function registerComponent(name,folderName) {
+async function registerComponent(name, folderName) {
+  // Determine base folder (src or app)
+  const baseFolder = fs.existsSync('app') ? 'app' : 'src';
 
-  const folderNames = folderName || name
-  const componentPath = `src/components-react-nex/${folderNames}/${name}.jsx`;
-  const utilsPath = `src/components-react-nex/${folderNames}/utils.js`;
+  const folderNames = folderName || name;
+  const componentPath = `${baseFolder}/components-react-nex/${folderNames}/${name}.jsx`;
+  const utilsPath = `${baseFolder}/components-react-nex/${folderNames}/utils.js`;
 
   // Fetch component code from URL if not found locally
   if (!fs.existsSync(componentPath)) {
@@ -24,10 +26,9 @@ async function registerComponent(name,folderName) {
 
       const code = response.data;
 
-      
       // Create components folder if it doesn't exist
-      if (!fs.existsSync(`src/components-react-nex/${folderNames}/`)) {
-        fs.mkdirSync(`src/components-react-nex/${folderNames}/`, { recursive: true });
+      if (!fs.existsSync(`${baseFolder}/components-react-nex/${folderNames}/`)) {
+        fs.mkdirSync(`${baseFolder}/components-react-nex/${folderNames}/`, { recursive: true });
       }
 
       // Store code locally
@@ -41,7 +42,7 @@ async function registerComponent(name,folderName) {
             throw new Error(`Dependency "${dependencyName}" not found in registry`);
           }
 
-          const dependencyPath = `src/components-react-nex/${folderNames}/${dependencyName}.jsx`;
+          const dependencyPath = `${baseFolder}/components-react-nex/${folderNames}/${dependencyName}.jsx`;
           const dependencyResponse = await axios.get(dependencyInfo.url, { responseType: 'text' });
           if (!dependencyResponse.data) {
             throw new Error(`Failed to fetch dependency ${dependencyName}: No data received`);
@@ -72,14 +73,13 @@ async function registerComponent(name,folderName) {
 
   // Load component from local file
   try {
-    // // Load component code from local file
-    console.log(`Component "${name}" successfully registered.`);
+    console.log(`✨ ${name} component successfully added`);
   } catch (error) {
     console.error(`Error loading local component ${name}: ${error.message}`);
     throw error;
   }
 }
 
-module.exports = { 
-  registerComponent 
+module.exports = {
+  registerComponent
 };

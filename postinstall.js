@@ -1,7 +1,7 @@
 const childProcess = require('child_process');
 
 function installDependencies() {
-  const dependencies = ['classnames', 'react-icons'];
+  const dependencies = ['classnames', 'react-icons' , 'dayjs'];
   dependencies.forEach(dep => {
     try {
       require.resolve(dep);
