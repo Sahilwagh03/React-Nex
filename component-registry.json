@@ -1,145 +1,258 @@
 {
-  "Alert": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Alert/Alert.jsx",
-    "version": "1.2.0",
-    "description": "A basic button component for user interactions.",
-    "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Alert/utils.js"
+  "Accordion": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Accordion/Accordion.jsx",
+    "version": "1.0.0",
+    "description": "A Accordion component for your application."
   },
-  "Button": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Button/Button.jsx",
-    "version": "1.0.1",
-    "description": "A versatile Button component for displaying popups."
+  "Alert": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Alert/Alert.jsx",
+    "version": "1.0.0",
+    "description": "A Alert component for your application.",
+    "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Alert/utils.js"
+  },
+  "AnimatedLines": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/AnimatedLines/AnimatedLines.jsx",
+    "version": "1.0.0",
+    "description": "A AnimatedLines component for your application."
   },
   "Avatar": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Avatar/Avatar.jsx",
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Avatar/Avatar.jsx",
     "version": "1.0.0",
-    "description": "A versatile Avatar component for displaying user avatars.",
+    "description": "A Avatar component for your application.",
+    "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Avatar/utils.js",
     "dependencies": [
       "AvatarImage",
-      "AvatarFallback"
-    ],
-    "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Avatar/utils.js"
-  },
-  "AvatarImage": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Avatar/AvatarImage.jsx",
-    "version": "1.0.0",
-    "description": "Component to display avatar images."
-  },
-  "AvatarFallback": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Avatar/AvatarInitialsFallback.jsx",
-    "version": "1.0.0",
-    "description": "Fallback component to display when avatar image is not available."
-  },
-  "AvatarGroup": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/AvatarGroup/AvatarGroup.jsx",
-    "version": "1.0.0",
-    "description": "Component to display a group of avatars."
-  },
-  "Badge": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Badge/Badge.jsx",
-    "version": "1.0.0",
-    "description": "A simple badge component for labeling content."
-  },
-  "Checkbox": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/CheckBox/CheckBox.jsx",
-    "version": "1.0.0",
-    "description": "A checkbox component for selecting options."
-  },
-  "InputOtpBox": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Input%20OTP/InputOtpBox.jsx",
-    "version": "1.0.1",
-    "description": "A PinBox component for getting otp values",
-    "dependencies": [
-      "InputOtpContainer"
-    ],
-    "folderName": "Input OTP",
-    "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Input%20OTP/utils.js"
-  },
-  "InputOtpContainer": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Input%20OTP/InputOtpContainer.jsx",
-    "version": "1.0.1",
-    "description": "A PinContainer component for wraping the PinBox"
-  },
-  "Card": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Card/Card.jsx",
-    "version": "1.0.0",
-    "description": "A versatile Card component for displaying content in a structured manner.",
-    "dependencies": [
-      "CardHeader",
-      "CardTitle",
-      "CardComponets",
-      "CardDescription",
-      "CardBody",
-      "CardFooter"
+      "AvatarInitialsFallback"
     ]
   },
-  "CardHeader": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Card/CardHeader.jsx",
+  "AvatarImage": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Avatar/AvatarImage.jsx",
     "version": "1.0.0",
-    "description": "Component representing the header of the card."
+    "description": "A AvatarImage component for your application.",
+    "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Avatar/utils.js",
+    "dependencies": [
+      "Avatar",
+      "AvatarInitialsFallback"
+    ]
   },
-  "CardTitle": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Card/CardTitle.jsx",
+  "AvatarInitialsFallback": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Avatar/AvatarInitialsFallback.jsx",
     "version": "1.0.0",
-    "description": "Component representing the title of the card."
+    "description": "A AvatarInitialsFallback component for your application.",
+    "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Avatar/utils.js",
+    "dependencies": [
+      "Avatar",
+      "AvatarImage"
+    ]
   },
-  "CardComponets": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Card/CardComponets.jsx",
+  "AvatarGroup": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/AvatarGroup/AvatarGroup.jsx",
     "version": "1.0.0",
-    "description": "export all components form this file "
+    "description": "A AvatarGroup component for your application."
   },
-  "CardDescription": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Card/CardDescription.jsx",
+  "Badge": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Badge/Badge.jsx",
     "version": "1.0.0",
-    "description": "Component representing the description of the card."
+    "description": "A Badge component for your application.",
+    "dependencies": [
+      "DefaultBadge"
+    ]
+  },
+  "DefaultBadge": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Badge/DefaultBadge.jsx",
+    "version": "1.0.0",
+    "description": "A DefaultBadge component for your application.",
+    "dependencies": [
+      "Badge"
+    ]
+  },
+  "Button": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Button/Button.jsx",
+    "version": "1.0.0",
+    "description": "A Button component for your application."
+  },
+  "Calendar": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Calendar/Calendar.jsx",
+    "version": "1.0.0",
+    "description": "A Calendar component for your application.",
+    "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Calendar/utils.js"
+  },
+  "Card": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Card/Card.jsx",
+    "version": "1.0.0",
+    "description": "A Card component for your application.",
+    "dependencies": [
+      "CardBody",
+      "CardComponets",
+      "CardDescription",
+      "CardFooter",
+      "CardHeader",
+      "CardTitle"
+    ]
   },
   "CardBody": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Card/CardBody.jsx",
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Card/CardBody.jsx",
     "version": "1.0.0",
-    "description": "Component representing the body of the card."
+    "description": "A CardBody component for your application."
+  },
+  "CardComponets": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Card/CardComponets.jsx",
+    "version": "1.0.0",
+    "description": "A CardComponets component for your application."
+  },
+  "CardDescription": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Card/CardDescription.jsx",
+    "version": "1.0.0",
+    "description": "A CardDescription component for your application."
   },
   "CardFooter": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Card/CardFooter.jsx",
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Card/CardFooter.jsx",
     "version": "1.0.0",
-    "description": "Component representing the footer of the card."
+    "description": "A CardFooter component for your application."
+  },
+  "CardHeader": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Card/CardHeader.jsx",
+    "version": "1.0.0",
+    "description": "A CardHeader component for your application."
+  },
+  "CardTitle": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Card/CardTitle.jsx",
+    "version": "1.0.0",
+    "description": "A CardTitle component for your application."
+  },
+  "Charts": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Charts/Charts.jsx",
+    "version": "1.0.0",
+    "description": "A Charts component for your application."
+  },
+  "CheckBox": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/CheckBox/CheckBox.jsx",
+    "version": "1.0.0",
+    "description": "A CheckBox component for your application."
+  },
+  "Collaboration": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/CollaborationCircle/Collaboration.jsx",
+    "version": "1.0.0",
+    "description": "A Collaboration component for your application."
+  },
+  "CommandBlock": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/CommandBlock/CommandBlock.jsx",
+    "version": "1.0.0",
+    "description": "A CommandBlock component for your application."
+  },
+  "ComponentPreviewAndCode": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/ComponentPreviewAndCode/ComponentPreviewAndCode.jsx",
+    "version": "1.0.0",
+    "description": "A ComponentPreviewAndCode component for your application."
+  },
+  "DarkModeToogle": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/DarkModeToogle/DarkModeToogle.jsx",
+    "version": "1.0.0",
+    "description": "A DarkModeToogle component for your application."
+  },
+  "DatePicker": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/DatePicker/DatePicker.jsx",
+    "version": "1.0.0",
+    "description": "A DatePicker component for your application."
+  },
+  "Input": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Input/Input.jsx",
+    "version": "1.0.0",
+    "description": "A Input component for your application."
+  },
+  "InputOtpBox": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Input OTP/InputOtpBox.jsx",
+    "version": "1.0.0",
+    "description": "A InputOtpBox component for your application.",
+    "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Input OTP/utils.js",
+    "dependencies": [
+      "InputOtpContainer"
+    ]
+  },
+  "InputOtpContainer": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Input OTP/InputOtpContainer.jsx",
+    "version": "1.0.0",
+    "description": "A InputOtpContainer component for your application.",
+    "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Input OTP/utils.js",
+    "dependencies": [
+      "InputOtpBox"
+    ]
+  },
+  "Modal": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Modal/Modal.jsx",
+    "version": "1.0.0",
+    "description": "A Modal component for your application."
   },
   "Pagination": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Pagination/Pagination.jsx",
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Pagination/Pagination.jsx",
     "version": "1.0.0",
-    "description": "A Pagination Component for Pagination with beutiful Ui",
+    "description": "A Pagination component for your application.",
     "dependencies": [
       "PaginationItem"
     ]
   },
   "PaginationItem": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Pagination/PaginationItem.jsx",
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Pagination/PaginationItem.jsx",
     "version": "1.0.0",
-    "description": "A PaginationItem Component for Pagination with beutiful Ui"
+    "description": "A PaginationItem component for your application.",
+    "dependencies": [
+      "Pagination"
+    ]
   },
-  "Skeleton": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Skeleton/Skeleton.jsx",
+  "ProgressBar": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/ProgressBar/ProgressBar.jsx",
     "version": "1.0.0",
-    "description": "A Skeleton Component for Loading"
+    "description": "A ProgressBar component for your application."
   },
   "SearchBar": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/SearchBar/SearchBar.jsx",
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/SearchBar/SearchBar.jsx",
     "version": "1.0.0",
-    "description": "A SearchBar Component for searching or input",
-    "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/SearchBar/utils.js"
+    "description": "A SearchBar component for your application.",
+    "utilsFiles": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/SearchBar/utils.js"
   },
-  "Modal": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Modal/Modal.jsx",
+  "Select": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Select/Select.jsx",
     "version": "1.0.0",
-    "description": "A Modal Component for showing forms , dilogs , selection of plan etc."
+    "description": "A Select component for your application."
   },
-  "Tooltip": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Tooltip/Tooltip.jsx",
+  "Sheet": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Sheet/Sheet.jsx",
     "version": "1.0.0",
-    "description": "A Tooltip Component for showing floated info"
+    "description": "A Sheet component for your application."
+  },
+  "Skeleton": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Skeleton/Skeleton.jsx",
+    "version": "1.0.0",
+    "description": "A Skeleton component for your application."
+  },
+  "Stepper": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Stepper/Stepper.jsx",
+    "version": "1.0.0",
+    "description": "A Stepper component for your application."
+  },
+  "Switch": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Switch/Switch.jsx",
+    "version": "1.0.0",
+    "description": "A Switch component for your application."
   },
   "Table": {
-    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Components/main/src/components/Table/Table.jsx",
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Table/Table.jsx",
     "version": "1.0.0",
-    "description": "A Table Component for showing data or info in tabluar formate"
+    "description": "A Table component for your application."
+  },
+  "Tabs": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Tabs/Tabs.jsx",
+    "version": "1.0.0",
+    "description": "A Tabs component for your application."
+  },
+  "Tooltip": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/Tooltip/Tooltip.jsx",
+    "version": "1.0.0",
+    "description": "A Tooltip component for your application."
+  },
+  "TypewriterEffect": {
+    "url": "https://raw.githubusercontent.com/Sahilwagh03/React-Nex-Docs/refs/heads/main/components/TypewriterEffect/TypewriterEffect.jsx",
+    "version": "1.0.0",
+    "description": "A TypewriterEffect component for your application."
   }
 }
