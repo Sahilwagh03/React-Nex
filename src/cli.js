@@ -3,25 +3,42 @@ const { program } = require('commander');
 const registerComponent = require('./index').registerComponent;
 
 
-const MappingComponentWithCammand =(component)=>{
-  if(component=="Input-Otp"){
-    return {componentName:"InputOtpBox" , folderName:"Input OTP"}
+const MappingComponentWithCommand = (component) => {
+  if (component === "Input-Otp") {
+    return { componentName: "InputOtpBox", folderName: "Input OTP" };
+  } else {
+    return { componentName: component, folderName: component };
   }
-  else{
-    return component
-  }
-}
+};
+
 program
-  .command('add <component>')
-  .action(async (component) => {
+  .command('add <components...>')
+  .action(async (components) => {
+    const ora = (await import('ora')).default;
+    const spinner = ora();
     try {
-      const componentDetails = MappingComponentWithCammand(component)
-      const componentName = componentDetails.componentName || component
-      const folderName = componentDetails.folderName
-      await registerComponent(componentName,folderName);
+      for (const component of components) {
+        const { componentName, folderName } = MappingComponentWithCommand(component);
+
+        // Start loading spinner
+        spinner.start(`Checking component: ${componentName}...`);
+
+        const { exists } = await registerComponent(componentName, folderName);
+
+        if (exists) {
+          // Stop spinner with "already added" message
+          spinner.info(`Component "${componentName}" is already added. Skipping...`);
+        } else {
+          // Stop spinner with success message
+          spinner.succeed(`Successfully added: ${componentName}`);
+        }
+      }
     } catch (error) {
-      console.error(`Error installing component "${component}": ${error.message}`);
+      // Stop spinner with failure
+      spinner.fail(`Error adding components: ${error.message}`);
+      console.error(`Error installing components: ${error.message}`);
     }
   });
 
 program.parse(process.argv);
+
